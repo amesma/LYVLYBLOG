@@ -443,7 +443,7 @@ textarea {
 5.2 Menus
 --------------------------------------------------------------*/
 
-.main-navigation {
+#page .main-navigation {
 	background-color: gray;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 	color: #fff;
@@ -989,13 +989,14 @@ margin-top: 0px;
 	margin-bottom: 0px; /*original is 12 px*/
 }
 .site-logo {
-	max-width: 7%; /*original: auto*/
-	max-height: 7%;
+	max-width: 6.5%; /*original: auto*/
+	max-height: 6.5%;
 	height: auto;
 	width: auto;
 	position: absolute;
 	left: 4em;
 	top: 0.5em;
+	z-index: 2;
 }
 .site-logo img{
 }
@@ -1341,6 +1342,7 @@ blockquote cite {
 /* Front page content with featured image */
 .hero-content {
 	position: relative;
+	margin-top: -3.5em;
 }
 .hero-content > img {
 	display: block;
@@ -2132,4 +2134,17 @@ video {
 		margin: 0 55px 0 0;
 	}
 	
+}
+
+body.home #site-navigation {
+	background: rgb(53, 53, 93);
+	background: rgba(53, 53, 93, 0.3);
+	position: relative;
+	border-bottom: none;
+	z-index: 1;
+}
+
+body.home #site-navigation a{
+	
+	font-size: 1.55rem;
 }
